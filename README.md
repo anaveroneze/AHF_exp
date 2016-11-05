@@ -6,7 +6,7 @@ How to run:
 $ bin/AHF-v1.0-091 AHF.input 
 
 Data to test: 
-http://yt-project.org/data/GadgetDiskGalaxy.tar.gz
+http://popia.ft.uam.es/AMIGA/files/Sample.tgz
 
 Conversion ascii <-> gadget2:
 https://github.com/martinsparre/Gadget2Conversion
