@@ -38,3 +38,11 @@ cache de L1i:          32K
 cache de L2:           256K
 cache de L3:           3072K
 NUMA node0 CPU(s):     0-3
+```
+##Running Tests:
+```
+-Arquivo: LCDM.128.z50_snapshot Tamanho: 151188208 Execuções: 1 Tempo Exec: total time = 70 seconds (  0.0194 hours)
+-Arquivo: LCDM.064.z25_snapshot Tamanho: 151188208 Execuções: 1 Tempo Exec: total time = 69 seconds (  0.0192 hours)
+-Arquivo: LCDM.z30_snapshot Tamanho: 151188208 Execuções: 1 Tempo Exec: total time = 70 seconds (  0.0194 hours) 
+-Arquivo: LCONE.z30_snapshot Tamanho: 151188208 Execuções: 1 Tempo Exec: total time = 98 seconds (  0.0272 hours) 
+-Arquivo: Hernquist100000_000_snapshot Tamanho: 3600304 Execuções: 1 Tempo Exec: total time = 75 seconds (  0.0208 hours) 
