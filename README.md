@@ -46,3 +46,11 @@ NUMA node0 CPU(s):     0-3
 -Arquivo: Hernquist100000_000.txt Tamanho: 11648963 Execuções: 1 Tempo Exec: total time = 81 seconds (  0.0225 hours)
 -Arquivo: LCDM.064.z25.ascii Tamanho: 12282038 Execuções: 1 Tempo Exec: total time = 25 seconds ( 0.00694 hours)
 -Arquivo: LCDM.z30.ascii Tamanho: 235428 Execuções: 1 Tempo Exec: total time = 48 seconds (  0.0133 hours)
+```
+###Snapshot
+```
+-Arquivo: LCDM.128.z50_snapshot Tamanho: 151188208 Execuções: 1 Tempo Exec: total time = 68 seconds (  0.0189 hours)
+-Arquivo: LCDM.064.z25_snapshot Tamanho: 151188208 Execuções: 1 Tempo Exec: total time = 70 seconds (  0.0194 hours)
+-Arquivo: LCDM.z30_snapshot Tamanho: 151188208 Execuções: 1 Tempo Exec: total time = 70 seconds (  0.0194 hours)
+-Arquivo: LCONE.z30_snapshot Tamanho: 151188208 Execuções: 1 Tempo Exec: total time = 93 seconds (  0.0258 hours)
+-Arquivo: Hernquist100000_000_snapshot Tamanho: 3600304 Execuções: 1 Tempo Exec: total time = 71 seconds (  0.0197 hours)```
