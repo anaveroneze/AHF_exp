@@ -42,10 +42,30 @@ NUMA node0 CPU(s):     0-3
 ##Running Tests:
 ###Ascii
 ```
--Arquivo: LCDM.128.z50.ascii Tamanho: 109185665 Execuções: 1 Tempo Exec: total time = 69 seconds (  0.0192 hours)
--Arquivo: Hernquist100000_000.txt Tamanho: 11648963 Execuções: 1 Tempo Exec: total time = 81 seconds (  0.0225 hours)
--Arquivo: LCDM.064.z25.ascii Tamanho: 12282038 Execuções: 1 Tempo Exec: total time = 25 seconds ( 0.00694 hours)
--Arquivo: LCDM.z30.ascii Tamanho: 235428 Execuções: 1 Tempo Exec: total time = 48 seconds (  0.0133 hours)
+-Arquivo: LCDM.128.z50.ascii Tamanho: 109185665 Execuções: 5
+-1 Tempo Exec: total time          =        1 seconds (0.000278 hours)
+-2 Tempo Exec: total time          =        1 seconds (0.000278 hours)
+-3 Tempo Exec: total time          =        0 seconds (       0 hours)
+-4 Tempo Exec: total time          =        1 seconds (0.000278 hours)
+-5 Tempo Exec: total time          =        1 seconds (0.000278 hours)
+-Arquivo: Hernquist100000_000.txt Tamanho: 11648963 Execuções: 5
+-1 Tempo Exec: total time          =        3 seconds (0.000833 hours)
+-2 Tempo Exec: total time          =        3 seconds (0.000833 hours)
+-3 Tempo Exec: total time          =        3 seconds (0.000833 hours)
+-4 Tempo Exec: total time          =        3 seconds (0.000833 hours)
+-5 Tempo Exec: total time          =        3 seconds (0.000833 hours)
+-Arquivo: LCDM.064.z25.ascii Tamanho: 12282038 Execuções: 5
+-1 Tempo Exec: total time          =       39 seconds (  0.0108 hours)
+-2 Tempo Exec: total time          =       68 seconds (  0.0189 hours)
+-3 Tempo Exec: total time          =       62 seconds (  0.0172 hours)
+-4 Tempo Exec: total time          =       41 seconds (  0.0114 hours)
+-5 Tempo Exec: total time          =       17 seconds ( 0.00472 hours)
+-Arquivo: LCDM.z31.ascii Tamanho: 235428 Execuções: 5
+-1 Tempo Exec: total time          =       43 seconds (  0.0119 hours)
+-2 Tempo Exec: total time          =       53 seconds (  0.0147 hours)
+-3 Tempo Exec: total time          =       16 seconds ( 0.00444 hours)
+-4 Tempo Exec: total time          =       30 seconds ( 0.00833 hours)
+-5 Tempo Exec: total time          =       32 seconds ( 0.00889 hours)
 ```
 ###Snapshot
 ```
