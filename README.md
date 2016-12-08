@@ -13,6 +13,7 @@ https://github.com/martinsparre/Gadget2Conversion
 
 Compilation flags: change in Makefile.config or ../src/define.h
 
+##Running Tests:
 ``` <code>
 Arquitetura:           x86_64
 Modo(s) operacional da CPU:32-bit, 64-bit
@@ -39,90 +40,120 @@ cache de L2:           256K
 cache de L3:           3072K
 NUMA node0 CPU(s):     0-3
 ```
+###Ascii
+####1 Execução
+```
+-Arquivo: LCDM.128.z50.ascii Nº Partículas: 2097152 Tamanho: 109185443 Execuções: 1
+- (1) Tempo Exec: real	0m0.823s		Nº threads: 1
+- (1) Tempo Exec: real	0m0.699s		Nº threads: 2
+- (1) Tempo Exec: real	0m0.697s		Nº threads: 3
+- (1) Tempo Exec: real	0m0.730s		Nº threads: 4
+-Arquivo: Hernquist100000_000.txt Nº Partículas: 100000 Tamanho: 11648963 Execuções: 1
+- (1) Tempo Exec: real	0m5.407s		Nº threads: 1
+- (1) Tempo Exec: real	0m5.529s		Nº threads: 2
+- (1) Tempo Exec: real	0m5.306s		Nº threads: 3
+- (1) Tempo Exec: real	0m5.067s		Nº threads: 4
+-Arquivo: LCDM.064.z25.ascii Nº Partículas: 262144 Tamanho: 12281828 Execuções: 1
+- (1) Tempo Exec: real	0m0.264s		Nº threads: 1
+- (1) Tempo Exec: real	0m0.175s		Nº threads: 2
+- (1) Tempo Exec: real	1m48.277s		Nº threads: 3
+- (1) Tempo Exec: real	1m47.851s		Nº threads: 4
+-Arquivo: LCDM.z31.ascii Nº Partículas: 4096 Tamanho: 235226 Execuções: 1
+- (1) Tempo Exec: real	0m0.465s		Nº threads: 1
+- (1) Tempo Exec: real	0m0.177s		Nº threads: 2
+- (1) Tempo Exec: real	1m32.106s		Nº threads: 3
+- (1) Tempo Exec: real	0m58.747s		Nº threads: 4
+```
+####2 Execuções
+```
+-Arquivo: LCDM.128.z50.ascii Nº Partículas: 2097152 Tamanho: 109185443 Execuções: 2
+- (1) Tempo Exec: real	0m0.782s		Nº threads: 1
+- (2) Tempo Exec: real	0m0.803s		Nº threads: 1
+- (1) Tempo Exec: real	0m0.712s		Nº threads: 2
+- (2) Tempo Exec: real	0m0.723s		Nº threads: 2
+- (1) Tempo Exec: real	0m0.778s		Nº threads: 3
+- (2) Tempo Exec: real	0m0.778s		Nº threads: 3
+- (1) Tempo Exec: real	0m0.828s		Nº threads: 4
+- (2) Tempo Exec: real	0m0.728s		Nº threads: 4
+-Arquivo: Hernquist100000_000.txt Nº Partículas: 100000 Tamanho: 11648963 Execuções: 2
+- (1) Tempo Exec: real	0m5.426s		Nº threads: 1
+- (2) Tempo Exec: real	0m5.255s		Nº threads: 1
+- (1) Tempo Exec: real	0m4.863s		Nº threads: 2
+- (2) Tempo Exec: real	0m4.802s		Nº threads: 2
+- (1) Tempo Exec: real	0m4.755s		Nº threads: 3
+- (2) Tempo Exec: real	0m4.766s		Nº threads: 3
+- (1) Tempo Exec: real	0m4.788s		Nº threads: 4
+- (2) Tempo Exec: real	0m4.818s		Nº threads: 4
+-Arquivo: LCDM.064.z25.ascii Nº Partículas: 262144 Tamanho: 12281828 Execuções: 2
+- (1) Tempo Exec: real	0m0.444s		Nº threads: 1
+- (2) Tempo Exec: real	0m0.243s		Nº threads: 1
+- (1) Tempo Exec: real	0m0.216s		Nº threads: 2
+- (2) Tempo Exec: real	0m0.177s		Nº threads: 2
+- (1) Tempo Exec: real	1m1.527s		Nº threads: 3
+- (2) Tempo Exec: real	1m16.662s		Nº threads: 3
+- (1) Tempo Exec: real	1m0.009s		Nº threads: 4
+- (2) Tempo Exec: real	0m53.712s		Nº threads: 4
+-Arquivo: LCDM.z31.ascii Nº Partículas: 4096 Tamanho: 235226 Execuções: 2
+- (1) Tempo Exec: real	0m0.284s		Nº threads: 1
+- (2) Tempo Exec: real	0m0.242s		Nº threads: 1
+- (1) Tempo Exec: real	0m0.183s		Nº threads: 2
+- (2) Tempo Exec: real	0m0.224s		Nº threads: 2
+- (1) Tempo Exec: real	0m34.637s		Nº threads: 3
+- (2) Tempo Exec: real	1m34.793s		Nº threads: 3
+- (1) Tempo Exec: real	0m27.874s		Nº threads: 4
+- (2) Tempo Exec: real	1m23.538s		Nº threads: 4
+```
 ##Running Tests:
+``` <code>
+Arquitetura:           x86_64
+Modo(s) operacional da CPU:32-bit, 64-bit
+Ordem dos bytes:       Little Endian
+CPU(s):                8
+Lista de CPU(s) on-line:0-7
+Thread(s) per núcleo  2
+Núcleo(s) por soquete:4
+Soquete(s):            1
+Nó(s) de NUMA:        1
+ID de fornecedor:      GenuineIntel
+Família da CPU:       6
+Modelo:                44
+Nome do modelo:        Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+Step:                  2
+CPU MHz:               1600.000
+CPU MHz máx.:         2401,0000
+CPU MHz mín.:         1600,0000
+BogoMIPS:              4800.14
+Virtualização:       VT-x
+cache de L1d:          32K
+cache de L1i:          32K
+cache de L2:           256K
+cache de L3:           12288K
+CPU(s) de nó0 NUMA:   0-7
+```
 ###Ascii
 ```
--Arquivo: LCDM.128.z50.ascii Tamanho: 109185665 Execuções: 5
-- (1) Tempo Exec: .765706462		Nº threads: 1
-- (2) Tempo Exec: .747518179		Nº threads: 1
-- (3) Tempo Exec: .745798842		Nº threads: 1
-- (4) Tempo Exec: .745921961		Nº threads: 1
-- (5) Tempo Exec: .746073438		Nº threads: 1
-- (1) Tempo Exec: .685684287		Nº threads: 2
-- (2) Tempo Exec: .682689105		Nº threads: 2
-- (3) Tempo Exec: .680448586		Nº threads: 2
-- (4) Tempo Exec: .685162721		Nº threads: 2
-- (5) Tempo Exec: .691178322		Nº threads: 2
-- (1) Tempo Exec: .620378139		Nº threads: 3
-- (2) Tempo Exec: .626848629		Nº threads: 3
-- (3) Tempo Exec: .631596703		Nº threads: 3
-- (4) Tempo Exec: .627769218		Nº threads: 3
-- (5) Tempo Exec: .621896827		Nº threads: 3
-- (1) Tempo Exec: .654973621		Nº threads: 4
-- (2) Tempo Exec: .648460265		Nº threads: 4
-- (3) Tempo Exec: .640325573		Nº threads: 4
-- (4) Tempo Exec: .648004519		Nº threads: 4
-- (5) Tempo Exec: .642601211		Nº threads: 4
--Arquivo: Hernquist100000_000.txt Tamanho: 11648963 Execuções: 5
-- (1) Tempo Exec: 5.044142996		Nº threads: 1
-- (2) Tempo Exec: 4.768603999		Nº threads: 1
-- (3) Tempo Exec: 4.805396690		Nº threads: 1
-- (4) Tempo Exec: 4.772350187		Nº threads: 1
-- (5) Tempo Exec: 4.780785538		Nº threads: 1
-- (1) Tempo Exec: 4.736382709		Nº threads: 2
-- (2) Tempo Exec: 4.702574079		Nº threads: 2
-- (3) Tempo Exec: 4.713062013		Nº threads: 2
-- (4) Tempo Exec: 4.705608754		Nº threads: 2
-- (5) Tempo Exec: 4.718010315		Nº threads: 2
-- (1) Tempo Exec: 4.671525273		Nº threads: 3
-- (2) Tempo Exec: 4.642063646		Nº threads: 3
-- (3) Tempo Exec: 4.677645365		Nº threads: 3
-- (4) Tempo Exec: 4.651407175		Nº threads: 3
-- (5) Tempo Exec: 4.694306306		Nº threads: 3
-- (1) Tempo Exec: 4.703493680		Nº threads: 4
-- (2) Tempo Exec: 4.686275875		Nº threads: 4
-- (3) Tempo Exec: 4.671572457		Nº threads: 4
-- (4) Tempo Exec: 4.684032832		Nº threads: 4
-- (5) Tempo Exec: 4.687207867		Nº threads: 4
--Arquivo: LCDM.064.z25.ascii Tamanho: 12282038 Execuções: 5
-- (1) Tempo Exec: .242461992		Nº threads: 1
-- (2) Tempo Exec: .241731998		Nº threads: 1
-- (3) Tempo Exec: .241426917		Nº threads: 1
-- (4) Tempo Exec: .242318040		Nº threads: 1
-- (5) Tempo Exec: .240607836		Nº threads: 1
-- (1) Tempo Exec: .178951021		Nº threads: 2
-- (2) Tempo Exec: .175399361		Nº threads: 2
-- (3) Tempo Exec: .174681143		Nº threads: 2
-- (4) Tempo Exec: .175680250		Nº threads: 2
-- (5) Tempo Exec: .183803847		Nº threads: 2
-- (1) Tempo Exec: 44.681356228		Nº threads: 3
-- (2) Tempo Exec: 32.374489218		Nº threads: 3
-- (3) Tempo Exec: 59.129208501		Nº threads: 3
-- (4) Tempo Exec: 77.677651733		Nº threads: 3
-- (5) Tempo Exec: 19.722413685		Nº threads: 3
-- (1) Tempo Exec: 75.227463800		Nº threads: 4
-- (2) Tempo Exec: 54.959492892		Nº threads: 4
-- (3) Tempo Exec: 17.328829041		Nº threads: 4
-- (4) Tempo Exec: 35.686743624		Nº threads: 4
-- (5) Tempo Exec: 34.273076732		Nº threads: 4
--Arquivo: LCDM.z31.ascii Tamanho: 235428 Execuções: 5
-- (1) Tempo Exec: .264564872		Nº threads: 1
-- (2) Tempo Exec: .269319672		Nº threads: 1
-- (3) Tempo Exec: .262593112		Nº threads: 1
-- (4) Tempo Exec: .240744095		Nº threads: 1
-- (5) Tempo Exec: .242071168		Nº threads: 1
-- (1) Tempo Exec: .172865161		Nº threads: 2
-- (2) Tempo Exec: .174375083		Nº threads: 2
-- (3) Tempo Exec: .174017715		Nº threads: 2
-- (4) Tempo Exec: .174738487		Nº threads: 2
-- (5) Tempo Exec: .175196114		Nº threads: 2
-- (1) Tempo Exec: 17.455834847		Nº threads: 3
-- (2) Tempo Exec: 37.953328454		Nº threads: 3
-- (3) Tempo Exec: 18.104131378		Nº threads: 3
-- (4) Tempo Exec: 38.932474395		Nº threads: 3
-- (5) Tempo Exec: 65.135592284		Nº threads: 3
-- (1) Tempo Exec: 69.979038393		Nº threads: 4
-- (2) Tempo Exec: 81.035622500		Nº threads: 4
-- (3) Tempo Exec: 32.183654872		Nº threads: 4
-- (4) Tempo Exec: 45.524305963		Nº threads: 4
-- (5) Tempo Exec: 30.940065832		Nº threads: 4
+-Arquivo: LCDM.128.z50.ascii Nº Partículas: 2097152 Tamanho: 109185443 Execuções: 1
+- (1) Tempo Exec: real	0m1.374s		Nº threads: 1
+- (1) Tempo Exec: real	0m1.154s		Nº threads: 2
+- (1) Tempo Exec: real	0m34.536s		Nº threads: 3
+- (1) Tempo Exec: real	0m41.829s		Nº threads: 4
+-Arquivo: Hernquist100000_000.txt Nº Partículas: 100000 Tamanho: 11648963 Execuções: 1
+- (1) Tempo Exec: real	0m6.843s		Nº threads: 1
+- (1) Tempo Exec: real	0m6.619s		Nº threads: 2
+- (1) Tempo Exec: real	0m30.094s		Nº threads: 3
+- (1) Tempo Exec: real	1m37.094s		Nº threads: 4
+-Arquivo: LCDM.064.z25.ascii Nº Partículas: 262144 Tamanho: 12281828 Execuções: 1
+- (1) Tempo Exec: real	0m0.500s		Nº threads: 1
+- (1) Tempo Exec: real	0m0.383s		Nº threads: 2
+- (1) Tempo Exec: real	0m46.929s		Nº threads: 3
+- (1) Tempo Exec: real	0m36.501s		Nº threads: 4
+-Arquivo: LCDM.z31.ascii Nº Partículas: 4096 Tamanho: 235226 Execuções: 1
+- (1) Tempo Exec: real	0m0.500s		Nº threads: 1
+- (1) Tempo Exec: real	0m0.380s		Nº threads: 2
+- (1) Tempo Exec: real	0m31.061s		Nº threads: 3
+- (1) Tempo Exec: real	1m14.163s		Nº threads: 4
+```
+
+
+
+
