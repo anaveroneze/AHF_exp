@@ -5,8 +5,9 @@ http://popia.ft.uam.es/AHF/
 How to run: 
 $ bin/AHF-v1.0-091 AHF.input 
 
-Data to test: 
+Data to test:  
 http://popia.ft.uam.es/AMIGA/files/Sample.tgz
+https://github.com/msgilmer/project3/tree/19b30715ca45a3a40f72d9e6e7625393de31f80e/lcdm_gas2
 
 Conversion ascii <-> gadget2:
 https://github.com/martinsparre/Gadget2Conversion
