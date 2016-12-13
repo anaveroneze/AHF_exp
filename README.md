@@ -9,6 +9,7 @@ Data to test:
 http://popia.ft.uam.es/AMIGA/files/Sample.tgz
 https://github.com/msgilmer/project3/tree/19b30715ca45a3a40f72d9e6e7625393de31f80e/lcdm_gas2
 https://github.com/ldelvalle/gadget-snapshot-utils/tree/631105a4e90dccaf6b0260be8ba97fea918feee6/ND_Fig9/Pos_Vel_Mass_U
+https://github.com/jngaravitoc/DwarfAssociations/tree/master/data/B64_WM5_10909_LG_7Mpc_2048
 
 Conversion ascii <-> gadget2:
 https://github.com/martinsparre/Gadget2Conversion
