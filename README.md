@@ -16,7 +16,7 @@ https://github.com/martinsparre/Gadget2Conversion
 
 Compilation flags: change in Makefile.config or ../src/define.h
 
-##Running Tests:
+## Running Tests:
 ``` <code>
 Arquitetura:           x86_64
 Modo(s) operacional da CPU:32-bit, 64-bit
@@ -43,8 +43,8 @@ cache de L2:           256K
 cache de L3:           3072K
 NUMA node0 CPU(s):     0-3
 ```
-###Ascii
-####1 Execução
+### Ascii
+#### 1 Execução
 ```
 -Arquivo: LCDM.128.z50.ascii Nº Partículas: 2097152 Tamanho: 109185443 Execuções: 1
 - (1) Tempo Exec: real	0m0.823s		Nº threads: 1
@@ -67,7 +67,7 @@ NUMA node0 CPU(s):     0-3
 - (1) Tempo Exec: real	1m32.106s		Nº threads: 3
 - (1) Tempo Exec: real	0m58.747s		Nº threads: 4
 ```
-####2 Execuções
+#### 2 Execuções
 ```
 -Arquivo: LCDM.128.z50.ascii Nº Partículas: 2097152 Tamanho: 109185443 Execuções: 2
 - (1) Tempo Exec: real	0m0.782s		Nº threads: 1
@@ -106,7 +106,7 @@ NUMA node0 CPU(s):     0-3
 - (1) Tempo Exec: real	0m27.874s		Nº threads: 4
 - (2) Tempo Exec: real	1m23.538s		Nº threads: 4
 ```
-##Running Tests:
+## Running Tests:
 ``` <code>
 Arquitetura:           x86_64
 Modo(s) operacional da CPU:32-bit, 64-bit
@@ -133,7 +133,7 @@ cache de L2:           256K
 cache de L3:           12288K
 CPU(s) de nó0 NUMA:   0-7
 ```
-###Ascii
+### Ascii
 ```
 -Arquivo: LCDM.128.z50.ascii Nº Partículas: 2097152 Tamanho: 109185443 Execuções: 1
 - (1) Tempo Exec: real	0m1.374s		Nº threads: 1
