@@ -1,0 +1,338 @@
+===============================================================================
+	             A        H       H   FFFFFFFF    
+	           A A       H       H   F           
+	         A   A      H       H   F           
+	       AAAAAAA     HHHHHHHHH   FFFFFF      
+	     A       A    H       H   F           
+	   A         A   H       H   F           
+	 A           A  H       H   F       (1.0/094)
+===============================================================================
+
+ User Input:
+=============
+ic_filename       = /home/alsolorzano/AHF/2017/ahf-v1.0-094/test-files/halos.ascii (ASCII, 10)
+outfile_prefix    = All.snap
+LgridDomain       = 64
+LgridMax          = 1073741824
+NminPerHalo       = 5
+VescTune          = 5
+NperDomCell       = 1
+NperRefCell       = 1
+RhoVir            = 0
+Dvir              = 2
+MaxGatherRad      = 3 Mpc/h
+
+
+ OpenMP Info:
+==============
+Number of available processors = 8
+Number of threads in use       = 8
+
+
+
+
+
+
+===============================================================================
+
+		PART A
+	Setting up the run
+
+===============================================================================
+
+
+
+===============================================================================
+  A-1  Opening the data file
+===============================================================================
+
+Opening /home/alsolorzano/AHF/2017/ahf-v1.0-094/test-files/halos.ascii, a ASCII file on 1 processes.
+Starting to initialize file object from /home/alsolorzano/AHF/2017/ahf-v1.0-094/test-files/halos.ascii
+Done with initializing file object from /home/alsolorzano/AHF/2017/ahf-v1.0-094/test-files/halos.ascii
+Fileobject information:
+  Filetype:          ASCII
+  Filename:          /home/alsolorzano/AHF/2017/ahf-v1.0-094/test-files/halos.ascii
+  Mode:              1
+  minweight:         1e+40
+  maxweight:         0
+Headerobject information:
+  Header:                      testHeader
+  Multimass:                   1
+  Number of particles:         18419
+  Number of mass species:      1
+  Total mass:                  1.345195e+15
+  Number of timestep         : 1
+  Boxsize                    : 6.400000e+01
+  Omega0                     : 3.000000e-01
+  lambda0                    : 7.000000e-01
+  pmass                      : 0.000000e+00
+  a_initial                  : 1.000000e+00
+  a_current                  : 1.000000e+00
+
+
+===============================================================================
+  A-2  Reading data from file
+===============================================================================
+
+
+-------------------------------------------------------------------------------
+  A-2.1  Creating Storage
+-------------------------------------------------------------------------------
+
+WARNING: There are 18419 particles in the file, but the choice of pread and pskip would need 18446744073709551615, adjusting to 18419
+posx:
+  val    = 0x7fb3685de018
+  stride = 48
+posy:
+  val    = 0x7fb3685de01c
+  stride = 48
+posz:
+  val    = 0x7fb3685de020
+  stride = 48
+momx:
+  val    = 0x7fb3685de024
+  stride = 48
+momy:
+  val    = 0x7fb3685de028
+  stride = 48
+momz:
+  val    = 0x7fb3685de02c
+  stride = 48
+weight:
+  val    = (nil)
+  stride = 0
+id:
+  val    = 0x7fb3685de038
+  stride = 48
+u:
+  val    = (nil)
+  stride = 0
+bytes_float: 4
+bytes_int:   8
+
+-------------------------------------------------------------------------------
+  A-2.2  Reading
+-------------------------------------------------------------------------------
+
+WARNING:    weight (read, ignored)
+WARNING:    id     (set to position in file)
+Starting to read 18419 particles, skipping 0
+Done with reading 18419 particles from /home/alsolorzano/AHF/2017/ahf-v1.0-094/test-files/halos.ascii
+
+-------------------------------------------------------------------------------
+  A-2.3  Short sanity check
+-------------------------------------------------------------------------------
+
+First particle:
+    positions (x,y,z):      0.312653  0.473234  0.417896
+    velocities (vx,vy,vz):  0.0103984  0.0613781  -0.0228234
+    ID:                     0
+Last particle:
+    positions (x,y,z):      0.393246  0.520408  0.517279
+    velocities (vx,vy,vz):  -0.0339609  0.0390219  -0.0342734
+    ID:                     18418
+
+
+===============================================================================
+  A-3  Setting simulation parameter
+===============================================================================
+
+
+-------------------------------------------------------------------------------
+  A-3.1  Information from file
+-------------------------------------------------------------------------------
+
+WARNING: Since a_initial = 1 is equal to a_final = 1, create_timeline will not function correctly, setting a_initial = .1 * a_final = 0.1
+
+-------------------------------------------------------------------------------
+  A-3.2  Gathering from reading processes
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+  A-3.3  Local setup
+-------------------------------------------------------------------------------
+
+Creating timeline from a = 0.01 to a = 1
+
+creating timeline from a=0.01 to a=1 (MAXTIME=10000) ... done
+
+Timeline created
+Setting volume boundaries
+  minkey: 0
+  maxkey: 0
+  level : 0
+  ctype : Hilbert curve
+
+-------------------------------------------------------------------------------
+  A-3.4  Used simulation parameters
+-------------------------------------------------------------------------------
+
+simu.omega0          :  0.3
+simu.lambda0         :  0.7
+simu.boxsize         :  64
+simu.a_initial       :  0.1
+simu.a_final         :  1
+simu.z_initial       :  0
+simu.z_final         :  0
+simu.t_initial       :  0.038475
+simu.t_final         :  0.964102
+simu.super_t_initial :  -7.36857
+simu.super_t_final   :  -0
+simu.mean_dens       :  1
+simu.FourPiG         :  0.45
+simu.pmass           :  0
+simu.t_unit          :  0.01
+simu.gamma           :  0
+simu.timeline (ptr)  :  0x560b29122248
+simu.no_part         :  18419
+simu.no_vpart        :  18419
+simu.no_species      :  1
+simu.no_halos        :  0
+simu.NGRID_DOM       :  64
+simu.NGRID_MIN       :  64
+simu.NGRID_MAX       :  1073741824
+simu.Nth_dom         :  1
+simu.Nth_ref         :  1
+simu.MaxGatherRad    :  3
+simu.lb_level        :  0
+simu.min_weight      :  1e+40
+simu.max_weight      :  inf
+simu.np_limit        :  0
+simu.mmfocus         :  0
+simu.multi_mass      :  1
+simu.double_precision:  0
+
+-------------------------------------------------------------------------------
+  A-3.5  Setting time counter
+-------------------------------------------------------------------------------
+
+
+
+===============================================================================
+  A-4  Tidying
+===============================================================================
+
+Closing a ASCII file.
+amiga_main:  running with 18419 particles
+
+
+
+
+
+
+===============================================================================
+
+		PART B
+	Handing over logging to AMIGA
+
+===============================================================================
+
+################## ahf_gridinfo ###################
+Number of grids           = 7
+Number of refinements     = 6
+global.domgrid_no         = 0
+l1dim =               64 refine_ovdens =             -nan ovlim =                2
+l1dim =              128 refine_ovdens =             -nan ovlim =                2
+l1dim =              256 refine_ovdens =             -nan ovlim =                2
+l1dim =              512 refine_ovdens =             -nan ovlim =                2
+l1dim =             1024 refine_ovdens =             -nan ovlim =                2
+l1dim =             2048 refine_ovdens =             -nan ovlim =                2
+l1dim =             4096 refine_ovdens =             -nan ovlim =                2
+max_ovdens = -nan
+min_ref = 1    (ahf_nogrids = 6)
+################## ahf_gridinfo finished ##################
+
+#################### ahf_halos ####################
+AHF_MINPART  = 5
+AHF_VTUNE    = 5
+z            = 0
+Omega(z)     = 0.3
+OmegaL(z)    = 0.7
+rho_crit(z)  = 2.77554e+11
+rho_back(z)  = 8.32662e+10
+rho_vir(z)   = 2.77554e+11 (actual normalisation density)
+Delta_vir(z) = 2
+Hubble(z)    = 100
+
+Collecting the isolated refinements ... done
+
+Analysing the isolated refinements:
+
+Converting the spatialRef[][] tree to a halos[] array:
+ spatialRef2halos():
+  number of isolated refinements  = 319
+  first guess for number of halos = 234
+  constructing 234 (potential) halos from all 6 grid levels...
+      grid level        0 (         128) ->         21 isolated refinements ... finished
+      grid level        1 (         256) ->         13 isolated refinements ... finished
+      grid level        2 (         512) ->         63 isolated refinements ... finished
+      grid level        3 (        1024) ->        144 isolated refinements ... finished
+      grid level        4 (        2048) ->         75 isolated refinements ... finished
+      grid level        5 (        4096) ->          3 isolated refinements ... finished
+      number of halos: found=234 (max=319) expected=234 (tmpCount=234)
+      numDensZero = 0, numPartZero = 5
+
+Free'ing all grid structures:
+  free'ing grid 4096
+  free'ing grid 2048
+  free'ing grid 1024
+  free'ing grid 512
+  free'ing grid 256
+  free'ing grid 128
+  free'ing grid 64
+
+Constructing Halos (234)
+===================================
+
+Re-hashing substructure information using final radii
+=====================================================
+
+  Used   0.00036785s to write halos
+  Used   0.00035096s to write profiles
+  Used   0.00016347s to write substructures
+  Used   0.00035938s to write particles
+Used    0.0013706s to write data to ASCII files
+################## ahf_halos finished ##################
+
+supercomoving T = -0.000000
+scale factor  a = 1.000000
+redshift      z = 0.000000
+
+grid information
+----------------
+GRID           64: nodes=      262144 ( 0.00586 GB) npart=18446744073709520922 - TIME: pot=     0 dens=     0 DK=     0 grid=     1 hydro=     0 - SWEEPS: 0 0
+GRID          128: nodes=       38976 (0.000871 GB) npart=       16504 - TIME: pot=     0 dens=     0 DK=     0 grid=     0 hydro=     0 - SWEEPS: 0 0
+GRID          256: nodes=      106680 ( 0.00238 GB) npart=       15499 - TIME: pot=     0 dens=     0 DK=     0 grid=     0 hydro=     0 - SWEEPS: 0 0
+GRID          512: nodes=      160592 ( 0.00359 GB) npart=       11199 - TIME: pot=     0 dens=     0 DK=     0 grid=     0 hydro=     0 - SWEEPS: 0 0
+GRID         1024: nodes=      103264 ( 0.00231 GB) npart=        5045 - TIME: pot=     0 dens=     0 DK=     0 grid=     1 hydro=     0 - SWEEPS: 0 0
+GRID         2048: nodes=       26640 (0.000595 GB) npart=         854 - TIME: pot=     0 dens=     0 DK=     0 grid=     0 hydro=     0 - SWEEPS: 0 0
+GRID         4096: nodes=         576 (1.29e-05 GB) npart=          12 - TIME: pot=     0 dens=     0 grid=     0
+                                                                                        0           0         2
+detailed timing information (in sec.)
+-------------------------------------
+io           = 1
+      - startrun     = 1
+      - sfckey       = 0
+gendomgrids  = 0
+ll           = 0
+genrefgrids  = 2
+densrecovery = 0
+ahf_gridinfo = 1
+ahf_halos    = 0
+      - RefCentre                   = 0
+      - analyseRef                  = 0
+      - generate_tree               = 3
+      - spatialRef2halos            = 0
+      - ahf_halos_sfc_constructHalo = 0
+      - I/O                         = 0
+
+summary information
+-------------------
+time for AHF        =        1 seconds (0.000278 hours)
+total time          =        4 seconds ( 0.00111 hours)
+cumulative time     =  0.00111 hours (4.62963e-05 days)
+memory during step  =   0.0166 GB
+==========================================================
+                       FINISHED (v1.0/094)
+==========================================================
