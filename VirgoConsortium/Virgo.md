@@ -2,7 +2,7 @@
 https://wwwmpa.mpa-garching.mpg.de/galform/virgo/vls/index.shtml
 
 ## Notes: 
-* mostly of the time it use 1 thread only 
+* mostly of the time the program use only 1 thread 
 * tests made with 3 grids of refinement (3 level halos)
 * dVir = -1 virial overdensity criterion (<0: let AHF calculate it)
 * http://graphics.cs.ucdavis.edu/~okreylos/Research/AMRVis/ 
@@ -35,7 +35,7 @@ lot of time spent with io
 
 #### Use of OpenMP:
 file: specific.c </br>
-![specific](images/Butterfly-gen_AMRhierarchy.png?raw=true "Butterfly Graphical View of function specific.c")
+![specific](images/Butterfly-specific-c.png?raw=true "Butterfly Graphical View of function specific.c")
 which writes the log output, colecting and processing data of others functions results
 
 #### AHF Metrics: 
